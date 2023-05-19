@@ -1,0 +1,81 @@
+/* Homepage.css */
+
+.Homepage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .Navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .Navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .Navbar li {
+    margin: 0 10px;
+  }
+  
+  .Navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .Header {
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    font-size: 3em;
+  }
+  
+  .Content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+  
+  .Box {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .Box:hover {
+    transform: scale(1.1);
+  }
+  
+  .Footer {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+  
+  }
+  
+  @media (max-width: 768px) {
+    .Content {
+      padding: 20px;
+    }
+    
+    .Box {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  
